@@ -17,7 +17,9 @@
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
   "files": [
-    "/dist"
+    "dist",
+    "dist/atoms",
+    "dist/molecules"
   ],
   "repository": {
     "type": "git",
