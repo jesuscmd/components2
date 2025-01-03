@@ -1,6 +1,6 @@
 {
   "name": "@sat-dma/ich-sat-react-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "scripts": {
     "format": "prettier --write --parser typescript '**/*.{ts,tsx}'",
@@ -21,15 +21,15 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ashish-simform/sld-ui.git"
+    "url": "git+https://github.com/jesuscmd/components2.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ashish-simform/sld-ui/issues"
+    "url": "https://github.com/jesuscmd/components2/issues"
   },
-  "homepage": "https://github.com/ashish-simform/sld-ui#readme",
+  "homepage": "https://github.com/jesuscmd/components2#readme",
   "devDependencies": {
     "@storybook/addon-essentials": "^7.4.1",
     "@storybook/addon-interactions": "^7.4.1",
@@ -74,6 +74,6 @@
     ]
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@ashish-simform"
+    "registry": "https://npm.pkg.github.com/@sat-dma-ich-sat-react-ui"
   }
 }
