@@ -1,6 +1,6 @@
-import React, { HTMLProps, useContext } from "react";
+import React, { HTMLProps } from "react";
 import cx from "classnames";
-import styled, { ThemeContext } from "styled-components";
+import styled from "styled-components";
 import type { Theme } from "../../Theme/ui";
 import { DesertTheme } from "../../Theme/ui";
 

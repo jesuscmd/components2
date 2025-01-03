@@ -1,4 +1,4 @@
-import { Button, TypeButton } from "./../../Atoms";
+import { Button, TypeButton } from "../../atoms";
 
 const ModalFooter: React.FC<{
   footer?: React.ReactNode;

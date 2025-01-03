@@ -1,4 +1,4 @@
-import { Text, TypeText } from "./../../Atoms";
+import { Text, TypeText } from "../../atoms";
 
 const ModalHeader: React.FC<{ head?: string | React.ReactNode }> = ({
   head,
