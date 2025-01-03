@@ -2,6 +2,7 @@
 import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
 import { peerDependencies } from "./package.json";
+import copy from "rollup-plugin-copy";
 
 export default defineConfig({
   test: {
@@ -11,7 +12,7 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: "./src/index.ts", // Punto de entrada principal
+      entry: "./src/index.ts", // Especifica el punto de entrada principal
       name: "ich-sat-react-ui",
       fileName: (format) => `index.${format}.js`,
       formats: ["cjs", "es"],
@@ -24,9 +25,15 @@ export default defineConfig({
   },
   plugins: [
     dts({
-      insertTypesEntry: true, // Inserta un archivo de tipos en la raíz
-      outDir: "dist", // Asegúrate de que los tipos se generen en la carpeta correcta
-      rollupTypes: true, // Combina tipos generados en múltiples archivos
+      insertTypesEntry: true,
+      outDir: "dist", // Salida de tipos
+    }),
+    copy({
+      targets: [
+        { src: "src/atoms/**/*", dest: "dist/atoms" },
+        { src: "src/molecules/**/*", dest: "dist/molecules" },
+      ],
+      hook: "writeBundle", // Copiar después de que se genere el bundle
     }),
   ],
 });
