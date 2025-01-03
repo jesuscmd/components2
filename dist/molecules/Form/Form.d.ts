@@ -1,11 +1,10 @@
 import React, { MouseEventHandler } from "react";
-export type ButtonProps = {
+export type FormProps = {
     text?: string;
     primary?: boolean;
     disabled?: boolean;
     size?: "small" | "medium" | "large";
     onClick?: MouseEventHandler<HTMLButtonElement>;
 };
-declare const Button: React.FC<ButtonProps>;
+declare const Button: React.FC<FormProps>;
 export default Button;
-//# sourceMappingURL=Button.d.ts.map
