@@ -25,7 +25,9 @@ export default defineConfig({
   // plugins: [dts()], // Uses the 'vite-plugin-dts' plugin for generating TypeScript declaration files (d.ts).
   plugins: [
     dts({
-      insertTypesEntry: true, // Genera un archivo de tipos en la raíz
+      insertTypesEntry: true, // Inserta un archivo de tipos en la raíz
+      outDir: "dist", // Asegúrate de que los tipos se generen en la carpeta correcta
+      rollupTypes: true, // Combina tipos generados en múltiples archivos
     }),
   ],
 });
