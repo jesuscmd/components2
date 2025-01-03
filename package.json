@@ -17,9 +17,7 @@
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist",
-    "dist/atoms",
-    "dist/molecules"
+    "/dist"
   ],
   "repository": {
     "type": "git",
@@ -58,7 +56,6 @@
     "prettier": "^3.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "rollup-plugin-copy": "^3.5.0",
     "storybook": "^7.4.1",
     "styled-components": "^6.0.7",
     "typescript": "^5.2.2",

@@ -8,4 +8,3 @@ export type FormProps = {
 };
 declare const Button: React.FC<FormProps>;
 export default Button;
-//# sourceMappingURL=Form.d.ts.map
