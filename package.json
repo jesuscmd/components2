@@ -1,6 +1,6 @@
 {
   "name": "@sat-dma/ich-sat-react-ui",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "scripts": {
     "generate-scss": "tsx scripts/generate-scss.ts",
