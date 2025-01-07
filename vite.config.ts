@@ -25,13 +25,5 @@ export default defineConfig({
   },
   plugins: [
     dts(),
-    viteStaticCopy({
-      targets: [
-        {
-          src: "src/styles/[!.]*",
-          dest: "./styles",
-        },
-      ],
-    }),
   ], // Uses the 'vite-plugin-dts' plugin for generating TypeScript declaration files (d.ts).
 });
