@@ -3,9 +3,11 @@
   "version": "1.0.1",
   "description": "",
   "scripts": {
+    "generate-scss": "tsx scripts/generate-scss.ts",
+    "createSass": "sass src/styles/styles.scss src/styles/styles.css",
     "format": "prettier --write --parser typescript '**/*.{ts,tsx}'",
     "lint": "eslint . --ext .ts,.tsx --ignore-path .gitignore --fix",
-    "build": "tsc && vite build",
+    "build": "npm run generate-scss && npm run createSass & tsc && vite build",
     "test": "vitest run",
     "test-watch": "vitest",
     "test:ui": "vitest --ui",
@@ -21,9 +23,9 @@
   ],
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
-      "require": "./dist/index.d.ts",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.d.ts"
     },
     "./styles.css": {
       "import": "./dist/styles/styles.css"
@@ -66,8 +68,10 @@
     "prettier": "^3.4.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "sass-embedded": "^1.83.1",
     "storybook": "^8.4.7",
     "styled-components": "^6.1.14",
+    "tsx": "^4.19.2",
     "typescript": "^5.7.2",
     "vite": "^6.0.7",
     "vite-plugin-dts": "^4.4.0",

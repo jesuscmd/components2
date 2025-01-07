@@ -161,4 +161,7 @@ export interface Theme {
 }
 export declare const DarkDesertTheme: Theme;
 export declare const DesertTheme: Theme;
+export declare const DarkTheme: any;
+export declare const LightTheme: any;
+export declare const BaseTheme: any;
 export default DesertTheme;
