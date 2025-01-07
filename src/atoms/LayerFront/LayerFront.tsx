@@ -37,12 +37,12 @@ const LayerFront = React.forwardRef<HTMLDivElement, Partial<LayerFrontProps>>(
         {children && children}
       </MainComponent>
     );
-  }
+  },
 );
 
 LayerFront.propTypes = {};
 
-LayerFront.defaultProps = {};
+// LayerFront.defaultProps = {};
 
 export default styled(LayerFront).attrs((props) => ({
   theme: props.theme.name !== undefined ? props.theme : DesertTheme,

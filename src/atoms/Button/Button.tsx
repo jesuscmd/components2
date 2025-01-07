@@ -41,10 +41,10 @@ const Button = React.forwardRef<HTMLButtonElement, Partial<ButtonProps>>(
         {props.children}
       </button>
     );
-  }
+  },
 );
 
-Button.defaultProps = {};
+// Button.defaultProps = {};
 
 export default styled(Button)`
 background: ${(props) =>
