@@ -1,7 +1,6 @@
 import React, { ButtonHTMLAttributes } from "react";
 
 import cx from "classnames";
-import styled from "styled-components";
 
 export enum TypeButton {
   basic,
@@ -13,11 +12,11 @@ export enum TypeButton {
 }
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  typeButton: TypeButton;
-  centre: boolean;
-  disabled: boolean;
-  iconButton: boolean;
-  transparent: boolean;
+  typeButton?: TypeButton;
+  centre?: boolean;
+  disabled?: boolean;
+  iconButton?: boolean;
+  transparent?: boolean;
 }
 
 /**
@@ -43,4 +42,4 @@ const Button = React.forwardRef<HTMLButtonElement, Partial<ButtonProps>>(
 
 // Button.defaultProps = {};
 
-export default styled(Button)``;
+export default Button;

@@ -8,11 +8,14 @@ export declare enum TypeButton {
     outlineSecondary = 5
 }
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-    typeButton: TypeButton;
-    centre: boolean;
-    disabled: boolean;
-    iconButton: boolean;
-    transparent: boolean;
+    typeButton?: TypeButton;
+    centre?: boolean;
+    disabled?: boolean;
+    iconButton?: boolean;
+    transparent?: boolean;
 }
-declare const _default: import('styled-components/dist/types').IStyledComponentBase<"web", import('styled-components').FastOmit<Partial<ButtonProps> & React.RefAttributes<HTMLButtonElement>, never>> & string & Omit<React.ForwardRefExoticComponent<Partial<ButtonProps> & React.RefAttributes<HTMLButtonElement>>, keyof React.Component<any, {}, any>>;
-export default _default;
+/**
+ * Button.
+ */
+declare const Button: React.ForwardRefExoticComponent<Partial<ButtonProps> & React.RefAttributes<HTMLButtonElement>>;
+export default Button;
