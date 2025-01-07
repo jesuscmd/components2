@@ -338,7 +338,7 @@ function Hr() {
       }), Object.freeze && (Object.freeze(o.props), Object.freeze(o)), o;
     }
     function S(o, c, l, k, F, P) {
-      if (typeof o == "string" || typeof o == "function" || o === m || o === H || o === f || o === je || o === ye || o === ut || typeof o == "object" && o !== null && (o.$$typeof === Ie || o.$$typeof === $e || o.$$typeof === Le || o.$$typeof === J || o.$$typeof === Pe || o.$$typeof === z || o.getModuleId !== void 0)) {
+      if (typeof o == "string" || typeof o == "function" || o === m || o === H || o === f || o === je || o === ye || o === ut || typeof o == "object" && o !== null && (o.$$typeof === Ie || o.$$typeof === $e || o.$$typeof === Le || o.$$typeof === J || o.$$typeof === Pe || o.$$typeof === L || o.getModuleId !== void 0)) {
         var p = c.children;
         if (p !== void 0)
           if (k)
@@ -426,7 +426,7 @@ Check the render method of \`` + l + "`."), c || (o = e(o)) && (c = `
 
 Check the top-level render call using <` + o + ">."), c;
     }
-    var C = re, E = Symbol.for("react.transitional.element"), _ = Symbol.for("react.portal"), m = Symbol.for("react.fragment"), f = Symbol.for("react.strict_mode"), H = Symbol.for("react.profiler"), J = Symbol.for("react.consumer"), Le = Symbol.for("react.context"), Pe = Symbol.for("react.forward_ref"), je = Symbol.for("react.suspense"), ye = Symbol.for("react.suspense_list"), $e = Symbol.for("react.memo"), Ie = Symbol.for("react.lazy"), ut = Symbol.for("react.offscreen"), be = Symbol.iterator, We = Symbol.for("react.client.reference"), T = C.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, ne = Object.prototype.hasOwnProperty, B = Object.assign, z = Symbol.for("react.client.reference"), se = Array.isArray, K = 0, ce, oe, le, Z, q, ve, ue;
+    var C = re, E = Symbol.for("react.transitional.element"), _ = Symbol.for("react.portal"), m = Symbol.for("react.fragment"), f = Symbol.for("react.strict_mode"), H = Symbol.for("react.profiler"), J = Symbol.for("react.consumer"), Le = Symbol.for("react.context"), Pe = Symbol.for("react.forward_ref"), je = Symbol.for("react.suspense"), ye = Symbol.for("react.suspense_list"), $e = Symbol.for("react.memo"), Ie = Symbol.for("react.lazy"), ut = Symbol.for("react.offscreen"), be = Symbol.iterator, We = Symbol.for("react.client.reference"), T = C.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, ne = Object.prototype.hasOwnProperty, B = Object.assign, L = Symbol.for("react.client.reference"), se = Array.isArray, K = 0, ce, oe, le, Z, q, ve, ue;
     n.__reactDisabledLog = !0;
     var U, zt, dt = !1, ft = new (typeof WeakMap == "function" ? WeakMap : Map)(), Lr = Symbol.for("react.client.reference"), Lt, Wt = {}, Yt = {}, Bt = {};
     Fe.Fragment = m, Fe.jsx = function(o, c, l, k, F) {
@@ -440,11 +440,11 @@ var Gt;
 function Gr() {
   return Gt || (Gt = 1, process.env.NODE_ENV === "production" ? Be.exports = Vr() : Be.exports = Hr()), Be.exports;
 }
-var L = Gr(), fr = /* @__PURE__ */ ((e) => (e[e.basic = 0] = "basic", e[e.primary = 1] = "primary", e[e.secondary = 2] = "secondary", e[e.outlineBasic = 3] = "outlineBasic", e[e.outlinePrimary = 4] = "outlinePrimary", e[e.outlineSecondary = 5] = "outlineSecondary", e))(fr || {});
+var z = Gr(), fr = /* @__PURE__ */ ((e) => (e[e.basic = 0] = "basic", e[e.primary = 1] = "primary", e[e.secondary = 2] = "secondary", e[e.outlineBasic = 3] = "outlineBasic", e[e.outlinePrimary = 4] = "outlinePrimary", e[e.outlineSecondary = 5] = "outlineSecondary", e))(fr || {});
 const qr = re.forwardRef(
   function(t, r) {
     const { className: n, disabled: a, transparent: i, typeButton: s, ...u } = t;
-    return /* @__PURE__ */ L.jsx(
+    return /* @__PURE__ */ z.jsxs(
       "button",
       {
         className: xe(n),
@@ -452,7 +452,10 @@ const qr = re.forwardRef(
         ref: r,
         disabled: a === !0,
         ...u,
-        children: t.children
+        children: [
+          /* @__PURE__ */ z.jsx("p", { children: "s" }),
+          t.children
+        ]
       }
     );
   }
@@ -1526,7 +1529,7 @@ function to(e, t, r) {
         }
         return oe.className && (q.className = pe(q.className, oe.className)), q;
       }(J, f, We), ne = T.as || $e, B = {};
-      for (var z in T) T[z] === void 0 || z[0] === "$" || z === "as" || z === "theme" && T.theme === We || (z === "forwardedAs" ? B.as = T.forwardedAs : be && !be(z, ne) || (B[z] = T[z], be || process.env.NODE_ENV !== "development" || Kr(z) || lr.has(z) || !Et.has(ne) || (lr.add(z), console.warn('styled-components: it looks like an unknown prop "'.concat(z, '" is being sent through to the DOM, which will likely trigger a React console error. If you would like automatic filtering of unknown props, you can opt-into that behavior via `<StyleSheetManager shouldForwardProp={...}>` (connect an API like `@emotion/is-prop-valid`) or consider using transient props (`$` prefix for automatic filtering.)')))));
+      for (var L in T) T[L] === void 0 || L[0] === "$" || L === "as" || L === "theme" && T.theme === We || (L === "forwardedAs" ? B.as = T.forwardedAs : be && !be(L, ne) || (B[L] = T[L], be || process.env.NODE_ENV !== "development" || Kr(L) || lr.has(L) || !Et.has(ne) || (lr.add(L), console.warn('styled-components: it looks like an unknown prop "'.concat(L, '" is being sent through to the DOM, which will likely trigger a React console error. If you would like automatic filtering of unknown props, you can opt-into that behavior via `<StyleSheetManager shouldForwardProp={...}>` (connect an API like `@emotion/is-prop-valid`) or consider using transient props (`$` prefix for automatic filtering.)')))));
       var se = function(ce, oe) {
         var le = ir(), Z = ce.generateAndInjectStyles(oe, le.styleSheet, le.stylis);
         return process.env.NODE_ENV !== "production" && Ut(Z), Z;
@@ -1860,7 +1863,7 @@ const Dr = re.forwardRef(
     }, ...u } = t, d = (y) => {
       y.stopPropagation(), s();
     };
-    return /* @__PURE__ */ L.jsx(
+    return /* @__PURE__ */ z.jsx(
       "div",
       {
         className: xe(n),
@@ -1945,7 +1948,7 @@ const so = re.forwardRef(function(t, r) {
         return "span";
     }
   })(i);
-  return /* @__PURE__ */ L.jsx(
+  return /* @__PURE__ */ z.jsx(
     v,
     {
       className: xe(n),
@@ -2005,7 +2008,7 @@ const so = re.forwardRef(function(t, r) {
   font-style: ${(e) => e.italic ? "italic" : "normal"};
 `, lo = ({
   head: e
-}) => e ? /* @__PURE__ */ L.jsx("div", { className: "modal-head", children: typeof e == "string" ? /* @__PURE__ */ L.jsx(co, { typeText: zr.subtitle, className: "modal-title", children: e }) : e }) : null, uo = ({ footer: e, onClose: t }) => /* @__PURE__ */ L.jsx("div", { className: "modal-footer", children: e || /* @__PURE__ */ L.jsx(qr, { typeButton: fr.primary, onClick: t, children: "Cerrar" }) }), Dt = (e) => {
+}) => e ? /* @__PURE__ */ z.jsx("div", { className: "modal-head", children: typeof e == "string" ? /* @__PURE__ */ z.jsx(co, { typeText: zr.subtitle, className: "modal-title", children: e }) : e }) : null, uo = ({ footer: e, onClose: t }) => /* @__PURE__ */ z.jsx("div", { className: "modal-footer", children: e || /* @__PURE__ */ z.jsx(qr, { typeButton: fr.primary, onClick: t, children: "Cerrar" }) }), Dt = (e) => {
   const {
     className: t = "",
     head: r,
@@ -2022,7 +2025,7 @@ const so = re.forwardRef(function(t, r) {
   } = e;
   return Ur(() => {
     s ? document.body.style.overflow = "hidden" : document.body.style.overflow = "";
-  }, [s]), s ? /* @__PURE__ */ L.jsx(
+  }, [s]), s ? /* @__PURE__ */ z.jsx(
     io,
     {
       className: xe(t),
@@ -2030,15 +2033,15 @@ const so = re.forwardRef(function(t, r) {
       "aria-hidden": !0,
       onClose: i,
       ...w,
-      children: /* @__PURE__ */ L.jsx("div", { className: "modal-dialog", children: /* @__PURE__ */ L.jsx(
+      children: /* @__PURE__ */ z.jsx("div", { className: "modal-dialog", children: /* @__PURE__ */ z.jsx(
         "div",
         {
           className: xe("modal", { "modal-full": d }),
           onClick: (v) => v.stopPropagation(),
-          children: /* @__PURE__ */ L.jsxs("div", { className: xe("modal-wrapper", { "modal-wrapper-full": u }), children: [
-            /* @__PURE__ */ L.jsx(lo, { head: r }),
-            /* @__PURE__ */ L.jsx("div", { className: "modal-body", style: y, children: a }),
-            /* @__PURE__ */ L.jsx(uo, { footer: n, onClose: i })
+          children: /* @__PURE__ */ z.jsxs("div", { className: xe("modal-wrapper", { "modal-wrapper-full": u }), children: [
+            /* @__PURE__ */ z.jsx(lo, { head: r }),
+            /* @__PURE__ */ z.jsx("div", { className: "modal-body", style: y, children: a }),
+            /* @__PURE__ */ z.jsx(uo, { footer: n, onClose: i })
           ] })
         }
       ) })
