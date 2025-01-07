@@ -24,8 +24,7 @@ const Button = React.forwardRef<HTMLButtonElement, Partial<ButtonProps>>(
         disabled={disabled === true}
         {...other}
       >
-        <p>a</p>
-        {props.children}
+        a
       </button>
     );
   },
