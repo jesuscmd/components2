@@ -2,17 +2,7 @@ import React, { ButtonHTMLAttributes } from "react";
 
 import cx from "classnames";
 
-export enum TypeButton {
-  basic,
-  primary,
-  secondary,
-  outlineBasic,
-  outlinePrimary,
-  outlineSecondary,
-}
-
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  typeButton?: TypeButton;
   centre?: boolean;
   disabled?: boolean;
   iconButton?: boolean;
@@ -24,7 +14,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
  */
 const Button = React.forwardRef<HTMLButtonElement, Partial<ButtonProps>>(
   function Button(props, ref) {
-    const { className, disabled, transparent, typeButton, ...other } = props;
+    const { className, disabled, transparent, ...other } = props;
 
     return (
       <button
@@ -34,7 +24,7 @@ const Button = React.forwardRef<HTMLButtonElement, Partial<ButtonProps>>(
         disabled={disabled === true}
         {...other}
       >
-        <p>s</p>
+        <p>a</p>
         {props.children}
       </button>
     );
