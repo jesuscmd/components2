@@ -3,8 +3,6 @@ import React, { ButtonHTMLAttributes } from "react";
 import cx from "classnames";
 import styled from "styled-components";
 
-import { Theme } from "../../Theme/ui";
-
 export enum TypeButton {
   basic,
   primary,
@@ -20,7 +18,6 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   disabled: boolean;
   iconButton: boolean;
   transparent: boolean;
-  theme: Theme;
 }
 
 /**

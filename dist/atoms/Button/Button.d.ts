@@ -1,5 +1,4 @@
 import { default as React, ButtonHTMLAttributes } from 'react';
-import { Theme } from '../../Theme/ui';
 export declare enum TypeButton {
     basic = 0,
     primary = 1,
@@ -14,7 +13,6 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     disabled: boolean;
     iconButton: boolean;
     transparent: boolean;
-    theme: Theme;
 }
 declare const _default: import('styled-components/dist/types').IStyledComponentBase<"web", import('styled-components').FastOmit<Partial<ButtonProps> & React.RefAttributes<HTMLButtonElement>, never>> & string & Omit<React.ForwardRefExoticComponent<Partial<ButtonProps> & React.RefAttributes<HTMLButtonElement>>, keyof React.Component<any, {}, any>>;
 export default _default;
